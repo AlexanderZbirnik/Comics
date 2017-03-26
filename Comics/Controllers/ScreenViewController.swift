@@ -18,7 +18,7 @@ class ScreenViewController: UIViewController, ViewControllerTransitionProtocol {
         let listViewController =
             self.storyboard?.instantiateViewController(withIdentifier: "ListViewController")
         
-        self.add(asChildViewController: listViewController!) {}
+        self.add(asChildViewController: listViewController!, animated: false) {}
         self.addNotification()
     }
     

@@ -146,7 +146,7 @@ class ListViewController: UIViewController, ViewControllerTransitionProtocol {
             
             detailViewController.add(stuff: self.list[indexPath.row])
             
-            self.add(asChildViewController: detailViewController) {}
+            self.add(asChildViewController: detailViewController, animated: true) {}
             
         } else {
             
@@ -155,7 +155,7 @@ class ListViewController: UIViewController, ViewControllerTransitionProtocol {
             
             pagesViewController.stuff(list: self.list, selectedIndex: indexPath.row)
             
-            self.add(asChildViewController: pagesViewController) {
+            self.add(asChildViewController: pagesViewController, animated: true) {
                 
                 self.tableView.alpha = 0
                 self.searchBar.alpha = 0
