@@ -1,4 +1,6 @@
 # Comics 
 
 ## Language:
-- Swift 3
++ Swift 3
+## Archecture
++ MVC
