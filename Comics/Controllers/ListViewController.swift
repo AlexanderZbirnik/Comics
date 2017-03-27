@@ -8,6 +8,16 @@
 
 import UIKit
 
+enum URLS: String {
+    
+    case testJson = "http://test.php-cd.attractgroup.com/test.json"
+}
+
+enum ImageNames: String {
+    
+    case placeholder = "placeholder"
+}
+
 extension Date {
     
     func formattedDate() -> String {
@@ -48,7 +58,7 @@ class ListViewController: UIViewController, ViewControllerTransitionProtocol {
     
     func getAndSetStuff() {
         
-        NetworkManager.shared.getList(with: "http://test.php-cd.attractgroup.com/test.json", completion: { (jsonArray) in
+        NetworkManager.shared.getList(with: URLS.testJson.rawValue, completion: { (jsonArray) in
             
             for dict in jsonArray {
                 
@@ -78,7 +88,6 @@ class ListViewController: UIViewController, ViewControllerTransitionProtocol {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         
-        print("searchBar.text: \(searchBar.text)")
         searchBar.endEditing(true)
         
         self.list = self.allStuff.filter { $0.name == searchBar.text }
@@ -127,7 +136,7 @@ class ListViewController: UIViewController, ViewControllerTransitionProtocol {
         cell.stuffNameLabel.text = stuff.name
         cell.stuffDateLabel.text = stuff.date?.formattedDate()
         cell.stuffImageView.downloadImage(url: stuff.imageUrl!,
-                                          placeholder: UIImage(named: "placeholder")!,
+                                          placeholder: UIImage(named: ImageNames.placeholder.rawValue)!,
                                           activityIndicatorLarge: false)
         
         return cell

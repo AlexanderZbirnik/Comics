@@ -20,7 +20,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.imageView.downloadImage(url: (self.stuff?.imageUrl!)!, placeholder: UIImage(named: "placeholder")!, activityIndicatorLarge: true)
+        self.imageView.downloadImage(url: (self.stuff?.imageUrl!)!, placeholder: UIImage(named: ImageNames.placeholder.rawValue)!, activityIndicatorLarge: true)
         self.detailLabel.text = self.stuff?.description
     }
     
