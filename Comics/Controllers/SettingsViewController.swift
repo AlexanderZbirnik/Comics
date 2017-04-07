@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, ReuseIdentifierProtocol {
     
     @IBOutlet weak var imageView: UIImageView!
     

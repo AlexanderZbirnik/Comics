@@ -31,7 +31,7 @@ extension Date {
     }
 }
 
-class ListViewController: UIViewController, ViewControllerTransitionProtocol {
+class ListViewController: UIViewController, ReuseIdentifierProtocol, ViewControllerTransitionProtocol {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: TableView!
@@ -129,7 +129,7 @@ class ListViewController: UIViewController, ViewControllerTransitionProtocol {
     
     func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
         
-        let cell:StuffCell = tableView.dequeueReusableCell(withIdentifier: "stuffCell") as! StuffCell!
+        let cell:StuffCell = tableView.dequeueReusableCell(withIdentifier: StuffCell.reuseIdentifier) as! StuffCell!
         
         let stuff = self.list[indexPath.row]
         

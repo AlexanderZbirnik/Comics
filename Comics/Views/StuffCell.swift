@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StuffCell: UITableViewCell {
+class StuffCell: UITableViewCell, ReuseIdentifierProtocol {
     
     @IBOutlet weak var stuffImageView: UIImageView!
     

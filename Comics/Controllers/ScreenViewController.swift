@@ -16,7 +16,7 @@ class ScreenViewController: UIViewController, ViewControllerTransitionProtocol {
         super.viewDidLoad()
 
         let listViewController =
-            self.storyboard?.instantiateViewController(withIdentifier: "ListViewController")
+            self.storyboard?.instantiateViewController(withIdentifier: ListViewController.reuseIdentifier)
         
         self.add(asChildViewController: listViewController!, animated: false) {}
         self.addNotification()
@@ -67,7 +67,7 @@ class ScreenViewController: UIViewController, ViewControllerTransitionProtocol {
         case MenuItem.aboutUs:
             
             let aboutUsViewController =
-                self.storyboard?.instantiateViewController(withIdentifier: "AboutUsViewController")
+                self.storyboard?.instantiateViewController(withIdentifier: AboutUsViewController.reuseIdentifier)
             
             self.open(controller: aboutUsViewController!)
             
@@ -76,7 +76,7 @@ class ScreenViewController: UIViewController, ViewControllerTransitionProtocol {
         case MenuItem.stuffList:
             
             let listViewController =
-                self.storyboard?.instantiateViewController(withIdentifier: "ListViewController")
+                self.storyboard?.instantiateViewController(withIdentifier: ListViewController.reuseIdentifier)
             
             self.open(controller: listViewController!)
             
@@ -85,7 +85,7 @@ class ScreenViewController: UIViewController, ViewControllerTransitionProtocol {
         case MenuItem.settings:
             
             let settingsViewController =
-                self.storyboard?.instantiateViewController(withIdentifier: "SettingsViewController")
+                self.storyboard?.instantiateViewController(withIdentifier: SettingsViewController.reuseIdentifier)
             
             self.open(controller: settingsViewController!)
             

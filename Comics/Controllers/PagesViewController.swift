@@ -36,7 +36,7 @@ class PagesViewController: UIPageViewController, UIPageViewControllerDataSource,
         
         for stuff in self.list {
             
-            let page = storyboard?.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+            let page = storyboard?.instantiateViewController(withIdentifier: DetailViewController.reuseIdentifier) as! DetailViewController
             
             page.add(stuff: stuff)
             

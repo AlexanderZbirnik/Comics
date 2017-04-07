@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, ReuseIdentifierProtocol {
     
     @IBOutlet weak var imageView: RoundedImageView!
     @IBOutlet weak var detailLabel: UILabel!

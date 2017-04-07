@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AboutUsViewController: UIViewController {
+class AboutUsViewController: UIViewController, ReuseIdentifierProtocol {
     
     @IBOutlet weak var aboutUsLabel: UILabel!
     

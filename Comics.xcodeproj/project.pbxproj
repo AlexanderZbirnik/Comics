@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C73968341E980E6400601164 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73968331E980E6400601164 /* ReuseIdentifierProtocol.swift */; };
 		C760D7AB1E83CA73002134CD /* StuffCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C760D7AA1E83CA73002134CD /* StuffCell.swift */; };
 		C760D7B51E840CC5002134CD /* PagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C760D7B41E840CC5002134CD /* PagesViewController.swift */; };
 		C774B79D1E8430AE007E1B4C /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C774B79C1E8430AE007E1B4C /* TableView.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C73968331E980E6400601164 /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
 		C760D7AA1E83CA73002134CD /* StuffCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StuffCell.swift; sourceTree = "<group>"; };
 		C760D7B41E840CC5002134CD /* PagesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagesViewController.swift; sourceTree = "<group>"; };
 		C774B79C1E8430AE007E1B4C /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C73968321E980E4A00601164 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C73968331E980E6400601164 /* ReuseIdentifierProtocol.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		C774B7A21E848196007E1B4C /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				C7D671091E82A59200D0AAA8 /* AppDelegate.swift */,
+				C73968321E980E4A00601164 /* Helpers */,
 				C7D6711E1E82A67700D0AAA8 /* Utils */,
 				C774B7A21E848196007E1B4C /* Protocols */,
 				C7D6711B1E82A66000D0AAA8 /* Models */,
@@ -217,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7D6710A1E82A59200D0AAA8 /* AppDelegate.swift in Sources */,
+				C73968341E980E6400601164 /* ReuseIdentifierProtocol.swift in Sources */,
 				C774B7A41E848196007E1B4C /* ViewControllerTransitionProtocol.swift in Sources */,
 				C7D671281E82AB0400D0AAA8 /* MenuViewController.swift in Sources */,
 				C760D7AB1E83CA73002134CD /* StuffCell.swift in Sources */,
