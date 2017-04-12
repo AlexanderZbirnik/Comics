@@ -1,6 +1,5 @@
-# Comics 
-
-## Language:
-+ Swift 3
+# Comics
+## Language
++ Swift 3.1
 ## Archecture
-+ MVC
++ Clean Swift

@@ -17,7 +17,6 @@ protocol ViewControllerTransitionProtocol {
 
 extension ViewControllerTransitionProtocol where Self: UIViewController {
     
-    
     func add(asChildViewController viewController: UIViewController, animated: Bool, completion: @escaping () -> ()) {
         
         self.addChildViewController(viewController)
@@ -43,7 +42,7 @@ extension ViewControllerTransitionProtocol where Self: UIViewController {
             
         } else {
             
-             completion()
+            completion()
         }
     }
     
